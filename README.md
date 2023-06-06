@@ -82,7 +82,7 @@ python3 -c"from packaging import tags; print('\n'.join([str(t) for t in tags.sys
 
 Using one of these configurations, rename a wheel file inside of `dist` appropriately. For example, suppose that one of the displayed configurations is 
 ```
-cp311-cp311-macosx_13_0_universal2.
+cp311-cp311-macosx_13_0_universal2
 ```
 
 Then navigate into the `dist` directory and rename one of the existing wheel file(s):
