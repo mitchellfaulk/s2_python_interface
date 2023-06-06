@@ -22,7 +22,7 @@ Create a local directory, such as `source`, in which to clone the following fork
 ```
 mkdir source
 cd source
-git clone https://github.com/figroc/s2geometry
+git clone https://github.com/mitchellfaulk/s2geometry
 ```
 
 Navigate into the cloned repository:
