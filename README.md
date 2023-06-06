@@ -42,21 +42,21 @@ Use `cmake` with the Python wrapper set to ON:
 ```
 cmake -DBUILD_PYWRAPS2=ON ..
 ```
-(Note: You must call `cmake` on the parent directory `..` because the `build` direcotyr is empty.)
+(Note: You must call `cmake` on the parent directory `..` because the `build` directory is empty.)
 
 Make and install the build:
 ```
 sudo make install 
 ```
 
-## Build the python wheels
+## Build the Python wheels
 
 Install the necessary requirements 
 ```
 python3 -m pip install cmake_build_extension wheel
 ```
 
-Assuming you are currently still in the `build` directory, build the wheel:
+Assuming you are currently still in the `build` directory, build the wheels:
 ```
 cd python
 python3 setup.py bdist_wheel
@@ -64,9 +64,9 @@ python3 setup.py bdist_wheel
 
 The newly created wheel file(s) will be located inside of the `dist` subdirectory. 
 
-## Install from the wheel
+## Install from the wheels
 
-Begin by checking which configuration(s) of wheel files your machine supports. 
+Begin by checking which configuration(s) of wheels your machine supports using the following steps. 
 
 Install `packaging`:
 
@@ -80,18 +80,18 @@ Then view a list of 5 recent tags about configurations that your machine support
 python3 -c"from packaging import tags; print('\n'.join([str(t) for t in tags.sys_tags()]))" |head -5
 ```
 
-Using one of these configurations, rename a wheel file inside of `dist` appropriately. For example, suppose that one of the displayed configurations is 
+Using one of these configurations, rename a wheels file inside of `dist` appropriately. For example, suppose that one of the displayed configurations is 
 ```
 cp311-cp311-macosx_13_0_universal2
 ```
 
-Then navigate into the `dist` directory and rename one of the existing wheel file(s):
+Then navigate into the `dist` directory and rename one of the existing wheels file(s):
 ```
 cd dist
 mv s2_geometry-0.10.0-existing-configuration.whl s2_geometry-0.10.0-cp311-cp311-macosx_13_0_universal2.whl
 ```
 
-Use `pip3` to install the package from the wheel (continuing with the previous example):
+Use `pip3` to install the package from the wheels (continuing with the previous example):
 
 ```
 python3 -m pip install s2_geometry-0.10.0-cp311-cp311-macosx_13_0_universal2.whl
