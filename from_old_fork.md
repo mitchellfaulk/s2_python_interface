@@ -1,6 +1,6 @@
 # Setting up a Python interface for the S2 Geometry Library
 
-Note: This method is now deprecated, and it relies upon an older fork of a more recent repository. Please see the newer method at the [main directory](https://github.com/mitchellfaulk/s2_python_interface/tree/main) where we are able to successfully exploit the current repository. 
+Note: This method is now deprecated, and it relies upon an older fork of a more recent repository. Please see the newer method at the [main directory](https://github.com/mitchellfaulk/s2_python_interface/tree/main) where we are able to successfully exploit the recent repository. 
 
 The purpose of this note is to document the process of setting up a Python interface for the S2 Geometry Library. The installation process outlined on the S2 Geometry [site](https://s2geometry.io/about/platforms.html) was unsuccessful on my local machine, despite many hours of effort and troubleshooting. Along the way, I discovered a workaround, that is able to interface with an older version of the S2 Geometry Library (through a branch on GitHub that was forked a few years ago). 
 
